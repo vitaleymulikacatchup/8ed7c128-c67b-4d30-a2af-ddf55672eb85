@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -10,7 +10,7 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import { Star, Building2, Bed, Users, MapPin, Sparkles, Heart, ChefHat, Briefcase, Dumbbell, MessageCircle, Award, HelpCircle } from 'lucide-react';
+import { Star, Building2, Bed, Users, MapPin, Sparkles, Heart, ChefHat, Briefcase, Dumbbell, MessageCircle, Award, HelpCircle, Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -188,11 +188,11 @@ export default function Home() {
               imageAlt: "Sarah Mitchell, General Manager",
               socialLinks: [
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com/in/sarah-mitchell"
                 },
                 {
-                  icon: "Mail",
+                  icon: Mail,
                   url: "mailto:sarah@grandhaven.com"
                 }
               ]
@@ -206,11 +206,11 @@ export default function Home() {
               imageAlt: "Marcus Johnson, Head Concierge",
               socialLinks: [
                 {
-                  icon: "Phone",
+                  icon: Phone,
                   url: "tel:+1234567890"
                 },
                 {
-                  icon: "Mail",
+                  icon: Mail,
                   url: "mailto:marcus@grandhaven.com"
                 }
               ]
@@ -369,7 +369,7 @@ export default function Home() {
           imageAlt="Grand Haven Hotel elegant lobby and reception area"
           mediaPosition="right"
           buttonText="Send Message"
-          onSubmit="console.log"
+          onSubmit={() => console.log('Form submitted')}
           className="py-20 bg-background"
           containerClassName="max-w-7xl mx-auto px-4"
           formCardClassName="bg-card shadow-xl border border-accent/20"
